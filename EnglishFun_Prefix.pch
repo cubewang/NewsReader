@@ -1,0 +1,14 @@
+//
+// Prefix header for all source files of the 'EnglishFun' target in the 'EnglishFun' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+    #import <UIKit/UIKit.h>
+    #import "StringUtils.h"
+    #import "GlobalDef.h"
+    #import "iKnowAPI.h"
+    #import "EnglishFunAppDelegate.h"
+    #import "iKnowXMPPDelegate.h"
+    #import "DDLog.h"
+#endif
