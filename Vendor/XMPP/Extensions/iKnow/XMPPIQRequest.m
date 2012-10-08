@@ -208,11 +208,11 @@ static const int ddLogLevel = LOG_LEVEL_ERROR;
     
     if (iq) {
         response = [iq retain];
-        return [receipt signalSuccess];
+        [receipt signalSuccess];
     }
     
     RELEASE_SAFELY(response);
-    return [receipt signalFailure];
+    [receipt signalFailure];
 }
 
 - (void)iqAsyncResult:(XMPPIQ *)iq withInfo:(id <XMPPTrackingInfo>)info
